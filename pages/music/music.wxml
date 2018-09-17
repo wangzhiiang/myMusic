@@ -1,0 +1,46 @@
+<!--logs.wxml-->
+<view class="page-bg" style="background-image: url('https://y.gtimg.cn/music/photo_new/T002R300x300M000001blHem0B4fS8.jpg?max_age=2592000')">
+
+</view>
+<view class="music">
+  <swiper indicator-dots="true" duration="500" current="1" indicator-active-color="#ffffff">
+    <swiper-item>
+      <view class="title">Right Now</view>
+      <view class="img">
+        <image class="{{isPlay ? 'myRotote' : ''}}" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000001blHem0B4fS8.jpg?max_age=2592000"
+          mode="scaleToFill" lazy-load="false"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="singer">EXO</view>
+      <view class="img">
+        <image class="{{isPlay ? 'myRotote' : ''}}" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000001blHem0B4fS8.jpg?max_age=2592000"
+          mode="scaleToFill" lazy-load="false"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="title">Right Now</view>
+      <view class="img">
+        <image class="{{isPlay ? 'myRotote' : ''}}" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000001blHem0B4fS8.jpg?max_age=2592000"
+          mode="scaleToFill" lazy-load="false"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <view class="slider">
+    <view class="now-time">
+      {{currentTime}}
+    </view>
+    <slider class="time-slider" bindchanging="sliderChange" step="1" value="{{sliderVal}}" block-size="20" block-color="#ffffff" />
+    <view class="total-time">
+      {{duration}}
+    </view>
+  </view>
+  <view class="controller">
+    <view class="item icon-prev" bindtap="toggleMusic"></view>
+    <view class="item item-play" bindtap="playMusic">
+      <view class="{{isPlay ? 'icon-play stop' : 'icon-play'}}"></view>
+    </view>
+    <view class="item icon-next" bindtap="toggleMusic"></view>
+  </view>
+</view>

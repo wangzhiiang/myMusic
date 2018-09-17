@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper">
+    <swiper indicator-dots autoplay circular>
+      <block wx:for="{{items}}" wx:key="item.id">
+        <swiper-item>
+          <image class="swiper-img" mode="cover" lazy-load="true" src="{{item.src}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="icon-group">
+    <block>
+      <navigator class="item" url="/pages/logs/logs" open-type="switchTab" hover-class="none">
+        <image class="icon-img" mode="cover" src=""></image>
+        <view class="text">歌手</view>
+      </navigator>
+      <navigator class="item" url="/pages/music/music" hover-class="none">
+        <image class="icon-img" mode="cover" src=""></image>
+        <view class="text">排行</view>
+      </navigator>
+      <navigator class="item" url="/" hover-class="none">
+        <image class="icon-img" mode="cover" src=""></image>
+        <view class="text">歌单</view>
+      </navigator>
+      <navigator class="item" url="/" hover-class="none">
+        <image class="icon-img" mode="cover" src=""></image>
+        <view class="text">电台</view>
+      </navigator>
+    </block>
+  </view>
+
+  <view class="music-list">
+    <view class="title">
+      热门推荐
+    </view>
+    <view class="body">
+      <navigator class="item" url="/pages/music/music" hover-class="none">
+        <image src="http://p.qpic.cn/music_cover/PiajxSqBRaEKbjFyR0JMcwTJW4xGllcDsJ7ib83FGlCGiaApLZJ389icmQ/300?n=1"
+          mode="scaleToFill" lazy-load="true"></image>
+        <view class="content">
+          <view class="tit">小乔联手罗宾甜蜜又清新</view>
+          <view class="text">播放量：9737</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

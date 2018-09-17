@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/music/music",
+    "pages/logs/logs",
+    "pages/personal/personal"
+  ],
+  "window": {
+    "navigationBarTitleText": "My Music",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "selectedColor": "#000"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "selectedColor": "#000"
+    }, {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "selectedColor": "#000"
+    }]
+  },
+  "requiredBackgroundModes": ["audio"],
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
