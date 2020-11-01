@@ -2,7 +2,7 @@
 <view class="container">
   <view class="swiper">
     <swiper indicator-dots autoplay circular>
-      <block wx:for="{{items}}" wx:key="item.id">
+      <block wx:for="{{items}}" wx:key="index">
         <swiper-item>
           <image class="swiper-img" mode="cover" lazy-load="true" src="{{item.src}}"></image>
         </swiper-item>
