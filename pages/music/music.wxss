@@ -1,128 +1,132 @@
 .music {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .page-bg {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 200% 200%;
-  -webkit-filter: blur(5vw);
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 200% 200%;
+	-webkit-filter: blur(5vw);
 }
 
 swiper {
-  height: 660rpx;
+	height: 660rpx;
 }
 
 .music .title {
-  font-size: 36rpx;
-  color: #333;
+	font-size: 36rpx;
+	color: #333;
 }
 
 .music .singer {
-  font-size: 28rpx;
-  color: #eee;
-  margin-top: 40rpx;
+	font-size: 28rpx;
+	color: #eee;
+	margin-top: 40rpx;
 }
 
 .music .img {
-  margin-top: 60rpx;
+	margin-top: 60rpx;
 }
 
 .music image {
-  display: inline-block;
-  width: 400rpx;
-  height: 400rpx;
-  border-radius: 100%;
-  border: 10px solid #eee;
+	display: inline-block;
+	width: 400rpx;
+	height: 400rpx;
+	border-radius: 100%;
+	border: 10px solid #eee;
 }
 
 .myRotote {
-  animation: myRotote 8s linear infinite;
+	animation: myRotote 8s linear infinite;
 }
 
 .music .controller {
-  display: flex;
-  margin-top: 40rpx;
-  text-align: center;
-  justify-content: center;
-  align-items: center
+	display: flex;
+	margin-top: 40rpx;
+	text-align: center;
+	justify-content: center;
+	align-items: center
 }
 
 .music .controller .item {
-  display: block;
-  width: 80rpx;
-  height: 80rpx;
-  border: 2px solid #eee;
-  border-radius: 50%;
-  margin: 24rpx;
-  text-align: center;
+	display: block;
+	width: 80rpx;
+	height: 80rpx;
+	border: 2rpx solid #eee;
+	border-radius: 50%;
+	margin: 24rpx;
+	text-align: center;
 }
 
 .music .controller .item-play {
-  width: 100rpx;
-  height: 100rpx;
+	width: 100rpx;
+	height: 100rpx;
 }
 
 .music .controller .icon-play {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-top: 28rpx;
-  margin-left: 32rpx;
-  border: 12px solid transparent;
-  border-left: 12px solid #eee;
-  transition: 0.3s;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-top: 28rpx;
+	margin-left: 32rpx;
+	border: 24rpx solid transparent;
+	border-left: 24rpx solid #eee;
+	transition: 0.3s;
 }
 
 .music .controller .icon-play.stop {
-  margin-top: 32rpx;
-  margin-left: 0rpx;
-  border: 10px solid #eee;
+	margin-top: 32rpx;
+	margin-left: 0rpx;
+	border: 20rpx solid #eee;
 }
 
 .music .controller .icon-prev {
-  width: 80rpx;
-  height: 80rpx;
-  background: url('https://lg-m2wwg5nu-1257474226.cos.ap-shanghai.myqcloud.com/prev-icon.png') no-repeat center center;
-  background-size: 50rpx 50rpx;
+	width: 80rpx;
+	height: 80rpx;
+	background: url('https://lg-m2wwg5nu-1257474226.cos.ap-shanghai.myqcloud.com/prev-icon.png') no-repeat center center;
+	background-size: 50rpx 50rpx;
 }
 
 .music .controller .icon-next {
-  width: 80rpx;
-  height: 80rpx;
-  background: url('https://lg-m2wwg5nu-1257474226.cos.ap-shanghai.myqcloud.com/next-icon.png') no-repeat center center;
-  background-size: 50rpx 50rpx;
+	width: 80rpx;
+	height: 80rpx;
+	background: url('https://lg-m2wwg5nu-1257474226.cos.ap-shanghai.myqcloud.com/next-icon.png') no-repeat center center;
+	background-size: 50rpx 50rpx;
 }
 
 .slider {
-  display: flex;
-  padding: 20rpx 30rpx;
-  font-size: 28rpx;
-  color: #eee;
-  align-items: center
+	display: flex;
+	padding: 20rpx 30rpx;
+	font-size: 28rpx;
+	color: #eee;
+	align-items: center
+}
+
+.slider .now-time {
+	width: 80rpx;
 }
 
 .slider .time-slider {
-  flex: 1;
-  padding: 0 10rpx;
+	flex: 1;
+	padding: 0 10rpx;
 }
 
 @keyframes myRotote {
-  0% {
-    transform: rotate(0deg)
-  }
+	0% {
+		transform: rotate(0deg)
+	}
 
-  100% {
-    transform: rotate(360deg)
-  }
+	100% {
+		transform: rotate(360deg)
+	}
 }
